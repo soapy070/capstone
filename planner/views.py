@@ -8,50 +8,53 @@ from django.forms.widgets import DateInput
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group, User
+
+
+def is_admin(user):
+    return user.groups.filter(name='Admin').exists()
+
+
+def is_member(user):
+    return user.groups.filter(name='User').exists()
+
 
 """Defining manager_detail, member_detail, team_detail, location_detail,
 manager_list, and location_list views: These views retrieve data from the
 database using the get_object_or_404 function and render the corresponding HTML templates."""
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def manager_detail(request, id):
     manager = get_object_or_404(Manager, pk=id)
     return render(request, "manager/manager.html", {"manager": manager})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def member_detail(request, id):
     member = get_object_or_404(Member, pk=id)
     return render(request, "member/member.html", {"member": member})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def team_detail(request, id):
     team = get_object_or_404(Team, pk=id)
     return render(request, "team/team.html", {"team": team})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def location_detail(request, id):
     location = get_object_or_404(Location, pk=id)
     return render(request, "location/location.html", {"location": location})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def manager_list(request):
     return render(request, "manager/manager_list.html",
                   {"manager": Manager.objects.all()})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def location_list(request):
     return render(request, "location/location_list.html",
                   {"location": Location.objects.all()})
@@ -67,8 +70,7 @@ These views handle the creation, updating, and deletion of Member
 objects. They use the MemberForm class for rendering forms."""
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def new_member(request):
     if request.method == "POST":
         form = MemberForm(request.POST)
@@ -80,8 +82,6 @@ def new_member(request):
     return render(request, "member/new_member.html", {"form": form, "date_input_type": "date"})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
 def update_member(request, member_id):
     member = get_object_or_404(Member, id=member_id)
     if request.method == "POST":
@@ -95,8 +95,6 @@ def update_member(request, member_id):
                   {"form": form, "date_input_type": "date", "member_id": member_id})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
 def delete_member(request, member_id):
     member = get_object_or_404(Member, id=member_id)
     if request.method == "POST":
@@ -112,7 +110,8 @@ the creation, updating, and deletion of Location objects, respectively.
 They use the LocationForm class for rendering forms."""
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def new_location(request):
     if request.method == "POST":
         form = LocationForm(request.POST)
@@ -124,7 +123,8 @@ def new_location(request):
     return render(request, "location/new_location.html", {"form": form})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def update_location(request, location_id):
     location = get_object_or_404(Location, id=location_id)
     if request.method == "POST":
@@ -138,7 +138,8 @@ def update_location(request, location_id):
                   {"form": form, "date_input_type": "date", "location_id": location_id})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def delete_location(request, location_id):
     location = get_object_or_404(Location, id=location_id)
     if request.method == "POST":
@@ -153,8 +154,8 @@ ManagerForm = modelform_factory(Manager, exclude=[], widgets={'start_date': Date
 updating, and deletion of Manager objects, respectively. They use the ManagerForm class for rendering forms."""
 
 
-
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def new_manager(request):
     if request.method == "POST":
         form = ManagerForm(request.POST)
@@ -166,7 +167,8 @@ def new_manager(request):
     return render(request, "manager/new_manager.html", {"form": form})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def update_manager(request, manager_id):
     manager = get_object_or_404(Manager, id=manager_id)
     if request.method == "POST":
@@ -180,7 +182,8 @@ def update_manager(request, manager_id):
                   {"form": form, "date_input_type": "date", "manager_id": manager_id})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def delete_manager(request, manager_id):
     manager = get_object_or_404(Manager, id=manager_id)
     if request.method == "POST":
@@ -195,8 +198,7 @@ TeamForm = modelform_factory(Team, exclude=[])
 updating, and deletion of Team objects, respectively. They use the TeamForm class for rendering forms."""
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def new_team(request):
     if request.method == "POST":
         form = TeamForm(request.POST)
@@ -208,8 +210,7 @@ def new_team(request):
     return render(request, "team/new_team.html", {"form": form})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def update_team(request, team_id):
     team = get_object_or_404(Team, id=team_id)
     if request.method == "POST":
@@ -223,8 +224,7 @@ def update_team(request, team_id):
                   {"form": form, "team_id": team_id})
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
 def delete_team(request, team_id):
     team = get_object_or_404(Team, id=team_id)
     if request.method == "POST":
@@ -237,29 +237,28 @@ def delete_team(request, team_id):
 the creation of new User objects for regular users and administrators."""
 
 
-@login_required(login_url='/templates/login/')
-@user_passes_test(lambda u: u.is_superuser)
-def create_member(request):
+def create_member(request, user=None):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            user_group = Group.objects.get(name='User')
-            user.groups.add(user_group)
+            """user_group = Group.objects.get(name='User')
+            user.groups.add(user_group)"""
             return redirect("welcome")
     else:
         form = UserCreationForm()
     return render(request, "create_member/create_member.html", {'form': form})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+# @login_required
+# @user_passes_test(lambda u: u.groups.filter(name='Admin').exists(), login_url='login/not_allowed.html')
 def create_admin(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
-            admin_group = Group.objects.get(name='Admin')
-            user.groups.add(admin_group)
+            """admin_group = Group.objects.get(name='Admin')
+            user.groups.add(admin_group)"""
             return redirect("welcome")
     else:
         form = UserCreationForm()
@@ -287,3 +286,8 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect("welcome")
+
+
+def not_allowed(request):
+    return render(request, 'not_allowed.html')
+

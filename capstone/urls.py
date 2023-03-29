@@ -19,7 +19,7 @@ from website.views import welcome, date, about
 from planner.views import manager_detail, team_detail, location_detail, manager_list, location_list, member_detail
 from planner.views import new_member, update_member, delete_member, new_location, update_location, delete_location
 from planner.views import new_manager, update_manager, delete_manager, new_team, update_team, delete_team
-from planner.views import create_member, create_admin, login_view, logout_view
+from planner.views import create_member, create_admin, login_view, logout_view, not_allowed
 
 
 urlpatterns = [
@@ -48,6 +48,7 @@ urlpatterns = [
     path('create-member/', create_member, name='create_member'),
     path('create-admin/', create_admin, name='create_admin'),
     path('templates/login/', login_view, name='login'),
+    path('not_allowed.html', not_allowed, name='not_allowed'),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
 ]

@@ -17,9 +17,6 @@ h1, h2, p {
   padding: 0;
  }
 
-ul li a {
-  color: red; /* change this to the color you want */
-}
 
 h1 {
   font-size: 36px;
@@ -36,14 +33,14 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   color:floralwhite
 }
 
 a {
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   color:floralwhite
 }
 
@@ -97,28 +94,28 @@ ul {
 
 .members-box a {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .teams-box a {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .managers-box a {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .locations-box a {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 /* Set up the links inside the boxes */
 .box a {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   background-color: #ccc;
   color: cornflowerblue;
@@ -127,7 +124,7 @@ ul {
 
 .box p {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   background-color: #ccc;
   color: blue;
@@ -136,7 +133,7 @@ ul {
 
 .box ul {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   background-color: #ccc;
   color: green;
@@ -145,7 +142,7 @@ ul {
 
 .box li {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   background-color: #ddd;
   color: red;

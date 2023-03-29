@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/website/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680090694828</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Initial">
+      <created>1680093390071</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680093390071</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
