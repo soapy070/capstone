@@ -4,55 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;db.sqlite3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/capstone/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/capstone/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/capstone/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/capstone/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/capstone/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/0002_auto_20230328_1348.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/create_admin/create_admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/create_member/create_member.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/delete_location.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/location.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/location_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/new_location.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/update_location.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/login/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/manager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/manager_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/new_manager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/delete_member.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/member.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/new_member.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/update_member.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/delete_team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/new_team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/update_team.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/planner/views.py" beforeDir="false" />
+    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Initial">
       <change beforePath="$PROJECT_DIR$/capstone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/static/website/Meeting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/static/website/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/templates/website/welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capstone/website/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/location/location_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/location_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/manager_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/manager_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/website/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/iain/Desktop/Capstone&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Mercurial&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/iain/Desktop/Capstone",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Capstone" />
@@ -340,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680034025052</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Initial">
+      <created>1680084507666</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680084507666</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,6 +318,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="Initial commit to save progress" />
     <MESSAGE value="css working" />
     <MESSAGE value="extends html with base html" />
@@ -373,7 +339,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;capstone/urls.py&#10;#&#9;db.sqlite3&#10;#&#9;planner/templates/location/location.html&#10;#&#9;planner/templates/team/new_team.html&#10;#&#9;planner/templates/team/team.html&#10;#&#9;planner/templates/team/update_team.html" />
     <MESSAGE value="Location Update &amp; delete works" />
     <MESSAGE value="Member, Team, Location Update &amp; Delete work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Member, Team, Location Update &amp; Delete work" />
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>

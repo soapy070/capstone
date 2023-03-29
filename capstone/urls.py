@@ -47,6 +47,7 @@ urlpatterns = [
     path('delete-team/<int:team_id>/', delete_team, name='delete_team'),
     path('create-member/', create_member, name='create_member'),
     path('create-admin/', create_admin, name='create_admin'),
+    path('templates/login/', login_view, name='login'),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
 ]
