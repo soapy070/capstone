@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;db.sqlite3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/capstone/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/0002_auto_20230328_1348.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/create_admin/create_admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/create_member/create_member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/delete_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/location_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/new_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/location/update_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/manager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/manager_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/manager/new_manager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/delete_member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/new_member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/member/update_member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/delete_team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/new_team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/templates/team/update_team.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/planner/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/capstone/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/static/website/Meeting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/static/website/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/templates/website/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capstone/website/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/templates/location/location_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/location_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/templates/manager/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/manager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/templates/manager/manager_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/manager_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/website/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Capstone\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NSoE9vGrb69Z7eAm7k479XoTid" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/iain/Desktop/Capstone&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Mercurial&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Capstone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="" />
+      <created>1679666729503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679666729503</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit to save progress">
+      <created>1679740648248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679740648248</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit to save progress">
+      <created>1679741108324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679741108324</updated>
+    </task>
+    <task id="LOCAL-00003" summary="css working">
+      <created>1679750598898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679750598898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="css working">
+      <created>1679750607768</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679750607768</updated>
+    </task>
+    <task id="LOCAL-00005" summary="extends html with base html">
+      <created>1679756617154</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679756617154</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create new staff added">
+      <created>1679762856527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679762856527</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create new staff added">
+      <created>1679762889670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679762889670</updated>
+    </task>
+    <task id="LOCAL-00008" summary="redid database migrations">
+      <created>1679766130926</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679766130926</updated>
+    </task>
+    <task id="LOCAL-00009" summary="redid database migrations">
+      <created>1679766146681</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679766146681</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed css to allow expanding boxes">
+      <created>1679839415322</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679839415323</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed css to allow expanding boxes">
+      <created>1679839426920</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679839426920</updated>
+    </task>
+    <task id="LOCAL-00012" summary="just because I can!">
+      <created>1679841660340</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679841660340</updated>
+    </task>
+    <task id="LOCAL-00013" summary="just because I can!">
+      <created>1679841667040</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679841667040</updated>
+    </task>
+    <task id="LOCAL-00014" summary="just because I can!">
+      <created>1679841673024</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679841673024</updated>
+    </task>
+    <task id="LOCAL-00015" summary="date dropdown added to new_member.html and new_manager.html">
+      <created>1679908487607</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679908487607</updated>
+    </task>
+    <task id="LOCAL-00016" summary="saving progress">
+      <created>1679923835174</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679923835174</updated>
+    </task>
+    <task id="LOCAL-00017" summary="saving progress">
+      <created>1679923994256</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679923994256</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added delete_member which isn't deleting objects from database.">
+      <created>1679928148094</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679928148094</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Update/Delete User works!!">
+      <created>1679948248487</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679948248487</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Update/Delete Team works!!">
+      <created>1679949544135</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679949544135</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update/Delete Team works!!">
+      <created>1679949555700</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679949555700</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update/Delete Member works!!">
+      <created>1680006900656</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680006900657</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;capstone/capstone/urls.py&#10;#&#9;capstone/db.sqlite3&#10;#&#9;capstone/planner/templates/location/location.html&#10;#&#9;capstone/planner/templates/location/location_list.html&#10;#&#9;capstone/planner/templates/member/member.html&#10;#&#9;capstone/planner/templates/member/update_member.html&#10;#&#9;capstone/planner/views.py&#10;#&#9;capstone/website/templates/website/welcome.html">
+      <created>1680008338420</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680008338420</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;capstone/capstone/urls.py&#10;#&#9;capstone/db.sqlite3&#10;#&#9;capstone/planner/templates/location/location.html&#10;#&#9;capstone/planner/templates/location/location_list.html&#10;#&#9;capstone/planner/templates/member/member.html&#10;#&#9;capstone/planner/templates/member/update_member.html&#10;#&#9;capstone/planner/views.py&#10;#&#9;capstone/website/templates/website/welcome.html">
+      <created>1680008683214</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680008683214</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;capstone/capstone/urls.py&#10;#&#9;capstone/db.sqlite3&#10;#&#9;capstone/planner/templates/location/location.html&#10;#&#9;capstone/planner/templates/location/location_list.html&#10;#&#9;capstone/planner/templates/member/member.html&#10;#&#9;capstone/planner/templates/member/update_member.html&#10;#&#9;capstone/planner/views.py&#10;#&#9;capstone/website/templates/website/welcome.html">
+      <created>1680010367086</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680010367086</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;capstone/capstone/urls.py&#10;#&#9;capstone/db.sqlite3&#10;#&#9;capstone/planner/templates/location/location.html&#10;#&#9;capstone/planner/templates/location/location_list.html&#10;#&#9;capstone/planner/templates/member/member.html&#10;#&#9;capstone/planner/templates/member/update_member.html&#10;#&#9;capstone/planner/views.py&#10;#&#9;capstone/website/templates/website/welcome.html">
+      <created>1680018864387</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680018864387</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;capstone/urls.py&#10;#&#9;db.sqlite3&#10;#&#9;planner/templates/location/location.html&#10;#&#9;planner/templates/team/new_team.html&#10;#&#9;planner/templates/team/team.html&#10;#&#9;planner/templates/team/update_team.html">
+      <created>1680020874442</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680020874442</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;capstone/urls.py&#10;#&#9;db.sqlite3&#10;#&#9;planner/templates/location/location.html&#10;#&#9;planner/templates/team/new_team.html&#10;#&#9;planner/templates/team/team.html&#10;#&#9;planner/templates/team/update_team.html">
+      <created>1680020910875</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680020910875</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Member, Team, Location Update &amp; Delete work">
+      <created>1680034010622</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1680034010622</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Member, Team, Location Update &amp; Delete work">
+      <created>1680034025052</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680034025052</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit to save progress" />
+    <MESSAGE value="css working" />
+    <MESSAGE value="extends html with base html" />
+    <MESSAGE value="create new staff added." />
+    <MESSAGE value="create new staff added" />
+    <MESSAGE value="redid database migrations" />
+    <MESSAGE value="changed css to allow expanding boxes" />
+    <MESSAGE value="just because I can!" />
+    <MESSAGE value="date dropdown added to new_member.html and new_manager.html" />
+    <MESSAGE value="saving progress" />
+    <MESSAGE value="added delete_member which isn't deleting objects from database." />
+    <MESSAGE value="Update/Delete User works!!" />
+    <MESSAGE value="Update/Delete Team works!!" />
+    <MESSAGE value="Update/Delete Member works!!" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;capstone/capstone/urls.py&#10;#&#9;capstone/db.sqlite3&#10;#&#9;capstone/planner/templates/location/location.html&#10;#&#9;capstone/planner/templates/location/location_list.html&#10;#&#9;capstone/planner/templates/member/member.html&#10;#&#9;capstone/planner/templates/member/update_member.html&#10;#&#9;capstone/planner/views.py&#10;#&#9;capstone/website/templates/website/welcome.html" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;capstone/urls.py&#10;#&#9;db.sqlite3&#10;#&#9;planner/templates/location/location.html&#10;#&#9;planner/templates/team/new_team.html&#10;#&#9;planner/templates/team/team.html&#10;#&#9;planner/templates/team/update_team.html" />
+    <MESSAGE value="Location Update &amp; delete works" />
+    <MESSAGE value="Member, Team, Location Update &amp; Delete work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Member, Team, Location Update &amp; Delete work" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+</project>

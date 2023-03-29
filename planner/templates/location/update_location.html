@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Update Location{% endblock %}
+
+{% block content %}
+  <h1>Update Location</h1>
+  <form method="POST" action="{% url 'update_location' location_id=location_id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update</button>
+  </form>
+
+  <br>
+  <br>
+  <a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

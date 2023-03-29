@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Update Manager{% endblock %}
+
+{% block content %}
+  <h1>Update Manager</h1>
+  <form method="POST" action="{% url 'update_manager' manager_id=manager_id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update</button>
+  </form>
+
+  <br>
+  <br>
+  <a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

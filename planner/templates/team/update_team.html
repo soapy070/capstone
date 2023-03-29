@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Update Team{% endblock %}
+
+{% block content %}
+  <h1>Update Team</h1>
+  <form method="POST" action="{% url 'update_team' team_id=team_id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update</button>
+  </form>
+
+  <br>
+  <br>
+  <a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

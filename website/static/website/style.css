@@ -1,0 +1,195 @@
+{% load static %}
+/* Set up the background image */
+body {
+    font-family: sans-serif;
+    color: cornflowerblue;
+    background-color: floralwhite;
+    background-image: url('/static/website/Meeting.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Apply basic styles to headings and paragraphs */
+h1, h2, p {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+
+ul li a {
+  color: red; /* change this to the color you want */
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color:floralwhite
+}
+
+a {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color:floralwhite
+}
+
+ul {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color:floralwhite
+}
+
+/* Set up the boxes */
+.members-box {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 5px solid blue;
+}
+
+.teams-box {
+  position: absolute;
+  top: 56%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 5px solid red;
+}
+
+.managers-box {
+  position: absolute;
+  top: 54.3%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 5px solid orange;
+}
+
+.locations-box {
+  position: absolute;
+  top: 54.3%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+  border: 5px solid green;
+}
+
+.members-box a {
+  color: white;
+  text-align: center;
+}
+
+.teams-box a {
+  color: white;
+  text-align: center;
+}
+
+.managers-box a {
+  color: white;
+  text-align: center;
+}
+
+.locations-box a {
+  color: white;
+  text-align: center;
+}
+
+/* Set up the links inside the boxes */
+.box a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.box p {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+  color: blue;
+  text-decoration: none;
+}
+
+.box ul {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+  color: green;
+  text-decoration: none;
+}
+
+.box li {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd;
+  color: red;
+  text-decoration: none;
+}
+
+.box a:hover {
+  background-color: #ffaaff;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background-color: #aaa;
+}
+
+/* Style the unordered list
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}*/
+
+/* Style the list items
+li {
+  margin-bottom: 10px;
+}*/
+
+/* Set up a div for additional styling
+.additional-styling {
+  background-color: yellow;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}*/

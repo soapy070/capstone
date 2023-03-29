@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Location : {{location.name}}{% endblock %}
+
+{% block content %}
+
+<h1><i>{{location.name}}</i></h1>
+<p> {{location.name}} team works here.
+</p>
+</p>
+<br>
+
+<a href="{% url 'update_location' location_id=location.id %}" class="button">Update Location</a>
+<br>
+<a href="{% url 'delete_location' location.id %}" class="button">Delete Location</a>
+
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Member : {{member.name}}{% endblock %}
+
+{% block content %}
+<h1><i>{{member.name}}</i></h1>
+<p> {{member.name}} works in {{member.location}} and
+    started on {{member.start_date}}.
+</p>
+<br>
+
+<a href="{% url 'update_member' member_id=member.id|default_if_none:'' %}" class="button">Update Member</a>
+<br>
+<a href="{% url 'delete_member' member.id %}" class="button">Delete Member</a>
+
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+
+{% endblock %}

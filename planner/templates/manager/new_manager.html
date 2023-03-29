@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}New Manager{% endblock %}
+
+{% block content %}
+  <h1>New Manager</h1>
+  <form method="POST" action="{% url 'new_manager' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+<br>
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

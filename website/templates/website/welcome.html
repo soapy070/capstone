@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Team Planner{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Team Planner!</h1>
+    <p>
+        <a href="{% url 'login' %}" class="button">Log In</a>
+        <a href="{% url 'logout' %}" class="button">Log Out</a>
+    </p>
+
+<div class="container">
+
+<div  class="members-box">
+    <h2>Members</h2>
+
+    <ul>
+        {% for member in member %}
+            <li>
+                <a href="/member/{{member.id}}">
+                    {{ member.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{% url 'new_member' %}" class="button"> Create New Member</a>
+</div>
+
+<div class="teams-box">
+    <h2>Teams</h2>
+
+    <ul>
+        {% for team in team %}
+            <li>
+                <a href="/team/{{team.id}}">
+                    {{ team.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{% url 'new_team' %}" class="button">Create A New Team</a>
+</div>
+
+<div  class="managers-box">
+    <h2>Managers</h2>
+
+    <ul>
+        <!--{% for manager in man %}
+            <li>
+                <a href="/manager/{{manager.id}}">
+                    {{ manager.name }}
+                </a>
+            </li>
+        {% endfor %}-->
+    </ul>
+
+    <li><a href="{% url 'manager' %}">Manager List</a></li>
+<br>
+    <br>
+    <a href="{% url 'new_manager' %}" class="button">Create New Manager (Admin Only)</a>
+</div>
+
+<div class="locations-box">
+    <h2>Locations</h2>
+
+<ul>
+    <!--{% for location in loc %}
+        <li>
+            <a href="/location/{{location.id}}">
+                {{ location.name }}
+            </a>
+        </li>
+    {% endfor %}-->
+</ul>
+
+    <li><a href="{% url 'location' %}">Location List</a></li>
+<br>
+    <br>
+    <a href="{% url 'new_location' %}" class="button">Create New Location (Admin Only)</a>
+</div>
+</div>
+
+<br>
+<br>
+<a href="{% url 'create_member' %}" class="button">Create New Member Account</a>
+<br>
+<br>
+<a href="{% url 'create_admin' %}" class="button">Create New Admin Account</a>
+
+{% endblock %}

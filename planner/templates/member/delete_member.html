@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Delete Member{% endblock %}
+
+{% block content %}
+  <h1>Delete Member</h1>
+  <p>Are you sure you want to delete {{ member.name }}?</p>
+  <form method="POST" action="{% url 'delete_member' member.id %}">
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+  </form>
+  <br>
+  <br>
+  <a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

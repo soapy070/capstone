@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Create New Admin Account{% endblock %}
+{% block content %}
+    <h1>Create Admin</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <button type="submit">Create Admin Account</button>
+    </form>
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}

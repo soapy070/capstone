@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Manager : {{manager.name}}{% endblock %}
+
+{% block content %}
+
+<h1><i>{{manager.name}}</i></h1>
+<p> {{manager.name}} is the head of {{manager.location}} and
+    started on {{manager.start_date}}
+</p>
+<a href="{% url 'update_manager' manager_id=manager.id %}" class="button">Update Manager</a>
+<br>
+<a href="{% url 'delete_manager' manager.id %}" class="button">Delete Manager</a>
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+
+{% endblock %}

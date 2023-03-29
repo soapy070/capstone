@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Manager List{% endblock %}
+
+{% block content %}
+    <h2>Manager</h2>
+    <ul>
+      {% for manager in manager %}
+        <li>
+            <a href="{% url 'manager_detail' id=manager.id %}"> {{manager.name}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+<a href="{% url 'welcome' %}" class="button">Home</a>
+
+{% endblock %}

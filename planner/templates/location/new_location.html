@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}New Location{% endblock %}
+
+{% block content %}
+  <h1>New Location</h1>
+  <form method="POST" action="{% url 'new_location' %}">
+      {% csrf_token %}
+      {{ form }}
+    <button type="submit">Save</button>
+  </form>
+<br>
+<br>
+<a href="{% url 'welcome' %}" class="button">Home</a>
+{% endblock %}
