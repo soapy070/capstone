@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="trying to get logins/authorised users to work!!&#10;NO SUCH LUCK">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/member/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/member/member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$output.doc" beforeDir="false" />
-    </list>
+    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Nearly 100%" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -338,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680184615737</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="trying to get logins/authorised users to work!!&#10;NO SUCH LUCK">
+      <created>1680211126665</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1680211126665</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Nearly 100%">
+      <created>1680259863108</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1680259863108</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,8 +384,10 @@
     <MESSAGE value="Location Update &amp; delete works" />
     <MESSAGE value="Member, Team, Location Update &amp; Delete work" />
     <MESSAGE value="Initial" />
+    <MESSAGE value="made a few small changes to member.html" />
     <MESSAGE value="trying to get logins/authorised users to work!!&#10;NO SUCH LUCK" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to get logins/authorised users to work!!&#10;NO SUCH LUCK" />
+    <MESSAGE value="Nearly 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nearly 100%" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
