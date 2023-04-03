@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="changed some h1's to h2's for uniformity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/website/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/website/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680533317591</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="changed some h1's to h2's for uniformity">
+      <created>1680534981503</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1680534981503</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
