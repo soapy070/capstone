@@ -2,9 +2,8 @@
 /* Set up the background image */
 body {
     font-family: sans-serif;
-    color: cornflowerblue;
-    background-color: floralwhite;
-    background-image: url('/static/website/Meeting.png');
+    background-color: cornflowerblue;
+    background-image: url('/static/website/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -12,6 +11,7 @@ body {
 
 /* Apply basic styles to headings and paragraphs */
 h1, h2, p {
+  color: blue;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -21,34 +21,34 @@ h1, h2, p {
 h1 {
   font-size: 36px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 h2 {
   font-size: 24px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
-  text-align: left;
-  color:floralwhite
+  text-align: center;
+  color:blue;
 }
 
 a {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
-  color:floralwhite
+  color:blue;
 }
 
 ul {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
-  color:floralwhite
+  color:blue;
 }
 
 /* Set up the boxes */
@@ -93,22 +93,22 @@ ul {
 }
 
 .members-box a {
-  color: white;
+  color: blue;
   text-align: left;
 }
 
 .teams-box a {
-  color: white;
+  color: blue;
   text-align: left;
 }
 
 .managers-box a {
-  color: white;
+  color: blue;
   text-align: left;
 }
 
 .locations-box a {
-  color: white;
+  color: blue;
   text-align: left;
 }
 
@@ -118,7 +118,7 @@ ul {
   text-align: left;
   padding: 10px;
   background-color: #ccc;
-  color: cornflowerblue;
+  color: blue;
   text-decoration: none;
 }
 

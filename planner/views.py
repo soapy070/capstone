@@ -305,4 +305,3 @@ def user_group(request):
     # create a new group with the name "My Group"
     group = Group.objects.create(name='User')
     return HttpResponse("Group created successfully.")
-
