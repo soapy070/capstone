@@ -3,7 +3,7 @@
 {% block title %}New Member{% endblock %}
 
 {% block content %}
-  <h1>New Member</h1>
+  <h2>New Member</h2>
   <form method="POST" action="{% url 'new_member' %}">
     {% csrf_token %}
     {{ form.as_p }}

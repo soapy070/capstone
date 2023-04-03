@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Create New Admin Account{% endblock %}
 {% block content %}
-    <h1>Create Admin</h1>
+    <h2>Create Admin</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_ul }}

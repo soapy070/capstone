@@ -3,7 +3,7 @@
 {% block title %}New Location{% endblock %}
 
 {% block content %}
-  <h1>New Location</h1>
+  <h2>New Location</h2>
   <form method="POST" action="{% url 'new_location' %}">
       {% csrf_token %}
       {{ form }}

@@ -3,7 +3,7 @@
 {% block title %}Delete Manager{% endblock %}
 
 {% block content %}
-  <h1>Delete Manager</h1>
+  <h2>Delete Manager</h1>
   <p>Are you sure you want to delete {{ manager.name }}?</p>
   <form method="POST" action="{% url 'delete_manager' manager.id %}">
     {% csrf_token %}

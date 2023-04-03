@@ -3,7 +3,7 @@
 {% block title %}New Manager{% endblock %}
 
 {% block content %}
-  <h1>New Manager</h1>
+  <h2>New Manager</h1>
   <form method="POST" action="{% url 'new_manager' %}">
       {% csrf_token %}
       {{ form.as_p }}

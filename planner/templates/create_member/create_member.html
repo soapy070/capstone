@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Create New Member Account{% endblock %}
 {% block content %}
-    <h1>Create Member</h1>
+    <h2>Create Member</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_ul }}
