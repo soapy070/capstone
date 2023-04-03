@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="Added superuser access to @user_passes_test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="changed some h1's to h2's for uniformity">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/create_admin/create_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/create_admin/create_admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/create_member/create_member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/create_member/create_member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/location/delete_location.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/delete_location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/location/location.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/location/new_location.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/new_location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/location/update_location.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/location/update_location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/login/access_denied.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/login/access_denied.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/delete_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/delete_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/new_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/new_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/manager/update_manager.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/manager/update_manager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/member/delete_member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/member/delete_member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/member/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/member/member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/member/new_member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/member/new_member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/member/update_member.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/member/update_member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/team/delete_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/team/delete_team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/team/new_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/team/new_team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/team/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/team/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planner/templates/team/update_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/planner/templates/team/update_team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/website/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/website/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/website/welcome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680532724199</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="changed some h1's to h2's for uniformity">
+      <created>1680533317591</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680533317591</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,7 +427,8 @@
     <MESSAGE value="Nearly 100%" />
     <MESSAGE value="New background, changes CSS" />
     <MESSAGE value="Added superuser access to @user_passes_test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added superuser access to @user_passes_test" />
+    <MESSAGE value="changed some h1's to h2's for uniformity" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed some h1's to h2's for uniformity" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
