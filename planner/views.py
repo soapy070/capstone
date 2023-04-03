@@ -44,7 +44,7 @@ def team_detail(request, id):
     return render(request, "team/team.html", {"team": team})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def location_detail(request, id):
     location = get_object_or_404(Location, pk=id)
     return render(request, "location/location.html", {"location": location})
@@ -55,7 +55,7 @@ def manager_list(request):
                   {"manager": Manager.objects.all()})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def location_list(request):
     return render(request, "location/location_list.html",
                   {"location": Location.objects.all()})
@@ -113,7 +113,7 @@ the creation, updating, and deletion of Location objects, respectively.
 They use the LocationForm class for rendering forms."""
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def new_location(request):
     if request.method == "POST":
         form = LocationForm(request.POST)
@@ -125,7 +125,7 @@ def new_location(request):
     return render(request, "location/new_location.html", {"form": form})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def update_location(request, location_id):
     location = get_object_or_404(Location, id=location_id)
     if request.method == "POST":
@@ -139,7 +139,7 @@ def update_location(request, location_id):
                   {"form": form, "date_input_type": "date", "location_id": location_id})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def delete_location(request, location_id):
     location = get_object_or_404(Location, id=location_id)
     if request.method == "POST":
@@ -154,7 +154,7 @@ ManagerForm = modelform_factory(Manager, exclude=[], widgets={'start_date': Date
 updating, and deletion of Manager objects, respectively. They use the ManagerForm class for rendering forms."""
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def new_manager(request):
     if request.method == "POST":
         form = ManagerForm(request.POST)
@@ -166,7 +166,7 @@ def new_manager(request):
     return render(request, "manager/new_manager.html", {"form": form})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def update_manager(request, manager_id):
     manager = get_object_or_404(Manager, id=manager_id)
     if request.method == "POST":
@@ -180,7 +180,7 @@ def update_manager(request, manager_id):
                   {"form": form, "date_input_type": "date", "manager_id": manager_id})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def delete_manager(request, manager_id):
     manager = get_object_or_404(Manager, id=manager_id)
     if request.method == "POST":
@@ -234,7 +234,7 @@ def delete_team(request, team_id):
 the creation of new User objects for regular users and administrators."""
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def create_member(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -251,7 +251,7 @@ def create_member(request):
     return render(request, "create_member/create_member.html", {'form': form})
 
 
-@user_passes_test(lambda user: user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def create_admin(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
