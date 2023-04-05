@@ -31,7 +31,6 @@ def manager_detail(request, id):
     return render(request, "manager/manager.html", {"manager": manager})
 
 
-
 def member_detail(request, id):
     member = get_object_or_404(Member, pk=id)
     return render(request, "member/member.html", {"member": member})
