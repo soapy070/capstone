@@ -11,8 +11,6 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import Group, User
 from django.http import HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
-from django.urls import reverse
-
 
 
 def is_admin(user):
@@ -28,19 +26,17 @@ manager_list, and location_list views: These views retrieve data from the
 database using the get_object_or_404 function and render the corresponding HTML templates."""
 
 
-@login_required
 def manager_detail(request, id):
     manager = get_object_or_404(Manager, pk=id)
     return render(request, "manager/manager.html", {"manager": manager})
 
 
-@login_required
+
 def member_detail(request, id):
     member = get_object_or_404(Member, pk=id)
     return render(request, "member/member.html", {"member": member})
 
 
-@login_required
 def team_detail(request, id):
     team = get_object_or_404(Team, pk=id)
     return render(request, "team/team.html", {"team": team})
@@ -52,13 +48,12 @@ def location_detail(request, id):
     return render(request, "location/location.html", {"location": location})
 
 
-@login_required
 def manager_list(request):
     return render(request, "manager/manager_list.html",
                   {"manager": Manager.objects.all()})
 
 
-@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
+@user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='login')
 def location_list(request):
     return render(request, "location/location_list.html",
                   {"location": Location.objects.all()})
@@ -116,7 +111,6 @@ the creation, updating, and deletion of Location objects, respectively.
 They use the LocationForm class for rendering forms."""
 
 
-@login_required(login_url='access_denied')
 @user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def new_location(request):
     if request.method == "POST":
@@ -129,7 +123,6 @@ def new_location(request):
     return render(request, "location/new_location.html", {"form": form})
 
 
-@login_required(login_url='access_denied')
 @user_passes_test(lambda user: user.is_superuser or user.groups.filter(name='Admin').exists(), login_url='access_denied')
 def update_location(request, location_id):
     location = get_object_or_404(Location, id=location_id)
