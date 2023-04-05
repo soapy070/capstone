@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="fixed login redirect">
+    <list default="true" id="da02f9bf-1241-45d6-95fd-5ac680d7fefa" name="Changes" comment="fixed login redirect did not work!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/planner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/planner/views.py" afterDir="false" />
@@ -414,7 +414,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680691879099</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="fixed login redirect did not work!">
+      <created>1680698515489</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1680698515489</updated>
+    </task>
+    <task id="LOCAL-00049" summary="fixed login redirect did not work!">
+      <created>1680698552840</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1680698552840</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +446,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="extends html with base html" />
     <MESSAGE value="create new staff added." />
     <MESSAGE value="create new staff added" />
     <MESSAGE value="redid database migrations" />
@@ -457,7 +470,8 @@
     <MESSAGE value="changed some h1's to h2's for uniformity" />
     <MESSAGE value="added passwords.txt for testing purposes (wouldn't normally give passwords out with code!!) will be deleted before releasing" />
     <MESSAGE value="fixed login redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed login redirect" />
+    <MESSAGE value="fixed login redirect did not work!" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed login redirect did not work!" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
